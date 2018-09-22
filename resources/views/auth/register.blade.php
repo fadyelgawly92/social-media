@@ -68,6 +68,14 @@
                                 </button>
                             </div>
                         </div>
+                        <hr>
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                                <a href="{{ url('/auth/github') }}" class="btn btn-github"><i class=""></i></a>
+                                <a href="{{ url('/auth/twitter') }}" class="btn btn-twitter"><i class=""></i></a>
+                                <a href="{{ url('/auth/facebook') }}" class="btn btn-facebook"><i class=""></i></a>
+                            </div>
+                        </div>    
                     </form>
                 </div>
             </div>

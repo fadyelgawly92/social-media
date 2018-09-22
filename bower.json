@@ -1,0 +1,17 @@
+{
+  "name": "lara-social",
+  "description": "",
+  "main": "",
+  "authors": [
+    "fadyelgawly92 <fadyraafatelgawly@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/fadyelgawly92/social-media",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
