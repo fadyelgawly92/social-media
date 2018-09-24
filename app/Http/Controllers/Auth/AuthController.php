@@ -19,6 +19,7 @@ class AuthController extends Controller
     {
         // dd('here');
         return Socialite::driver($provider)->redirect();
+        // dd('here');
     }
     /**
      * Obtain the user information from provider.  Check if the user already exists in our
@@ -29,7 +30,7 @@ class AuthController extends Controller
      * return Response
      */
 
-    public function handleProviderCallback()
+    public function handleProviderCallback($provider)
     {
         // dd('here');
         $user = Socialite::driver($provider)->user();
