@@ -36,21 +36,21 @@ return [
     ],
 
     'twitter' => [
-        'client_id' => env('AIbFhbau61znbecxxDiAJ1wb3'),
-        'client_secret' => env('HioDz1JE5h0ESFdTS5F8yK7xqv0QcadvPoCWDJNHrEUofQT75X'),
-        'redirect' => env('http://localhost:8000/auth/twitter/callback'),
+        'client_id' => env('TWITTER_ID'),
+        'client_secret' => env('TWITTER_SECRET'),
+        'redirect' => env('TWITTER_URL'),
     ],
 
     'facebook' => [
-        'client_id' => env('265172104124240'),
-        'client_secret' => env('eba65393ee5242553fb0b3036a701a04'),
-        'redirect' => env('http://localhost:8000/auth/facebook/callback'),
+        'client_id' => env('FACEBOOK_ID'),
+        'client_secret' => env('FACEBOOK_SECRET'),
+        'redirect' => env('FACEBOOK_URL'),
     ],
 
     'github' => [
-        'client_id' => env('3e9fce35cd97944a51ce'),
-        'client_secret' => env('8d85bf121815d8f55936ee079e88e3d956179b67'),
-        'redirect' => env('http://localhost:8000/auth/github/callback')
+        'client_id' => env('GITHUB_ID'),
+        'client_secret' => env('GITHUB_SECRET'),
+        'redirect' => env('GITHUB_URL')
     ],
 
 ];

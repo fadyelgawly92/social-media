@@ -17,6 +17,7 @@ class AuthController extends Controller
      */
     public function redirectToProvider($provider)
     {
+        // dd('here');
         return Socialite::driver($provider)->redirect();
     }
     /**
@@ -30,11 +31,12 @@ class AuthController extends Controller
 
     public function handleProviderCallback()
     {
+        // dd('here');
         $user = Socialite::driver($provider)->user();
 
         $authUser = $this->findOrCreateUser($user,$provider);
         Auth::login($authUser, true);
-        return redirect($this->redirectTo);
+        return redirect()->action('HomeController@index');
     }
     /**
      * If a user has registered before using social auth, return the user
